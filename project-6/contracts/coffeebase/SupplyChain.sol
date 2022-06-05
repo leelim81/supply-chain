@@ -293,27 +293,18 @@ contract SupplyChain {
   string  originFarmLongitude
   )
   {
-  // Assign values to the 8 parameters
+  // Get instance out of array to prevent stack too deep error
   Item item = items[_upc];
-  itemSKU = item.sku;
-  itemUPC = items[_upc].upc;
-  ownerID = items[_upc].ownerID;
-  originFarmerID = items[_upc].originFarmerID;
-  originFarmName = items[_upc].originFarmName;
-  originFarmInformation = items[_upc].originFarmInformation;
-  originFarmLatitude = items[_upc].originFarmLatitude;
-  originFarmLongitude = items[_upc].originFarmLongitude;
-
   return 
   (
-  itemSKU,
-  itemUPC,
-  ownerID,
-  originFarmerID,
-  originFarmName,
-  originFarmInformation,
-  originFarmLatitude,
-  originFarmLongitude
+  item.sku,
+  item.upc,
+  item.ownerID,
+  item.originFarmerID,
+  item.originFarmName,
+  item.originFarmInformation,
+  item.originFarmLatitude,
+  item.originFarmLongitude
   );
   }
 
