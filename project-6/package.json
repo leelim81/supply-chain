@@ -1,7 +1,6 @@
 {
-  "name": "supply-chain-E",
+  "name": "supply-chain-e",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "lite-server",
@@ -12,5 +11,13 @@
   "license": "MIT",
   "devDependencies": {
     "lite-server": "2.4.0"
-  }
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.7.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
